@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: Blogapp_1
+  profiles:
+    active: dev
+
+app:
+  upload-dir: uploads
+  name: BlogApp
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: my_blog_app
+
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .ftlh
+    cache: false
+
+logging:
+  level:
+    root: INFO
+    com.example.blogapp_1: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss} [%level] %logger{36} - %msg%n"
+  file:
+    name: logs/app.log
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        default_schema: my_blog_app
+
+  freemarker:
+    template-loader-path: classpath:/templates/
+    suffix: .ftlh
+    cache: true
+
+logging:
+  level:
+    root: INFO

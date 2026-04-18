@@ -1,0 +1,483 @@
+2026-04-18T00:01:03.847+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 7280 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:01:03.849+03:00 DEBUG 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:01:03.850+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:01:03.947+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-18T00:01:03.960+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-18T00:01:05.003+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:01:05.103+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:01:06.064+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:01:06.077+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:01:06.078+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:01:06.129+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:01:06.130+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2168 ms
+2026-04-18T00:01:06.230+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18T00:01:06.456+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@408ee795
+2026-04-18T00:01:06.458+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18T00:01:06.565+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:01:06.626+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-18T00:01:06.667+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:01:07.036+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:01:08.391+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:01:08.473+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:01:08.483+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:01:08.980+03:00  WARN 7280 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T00:01:09.008+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T00:01:09.496+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T00:01:09.547+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T00:01:09.556+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 6.316 seconds (process running for 7.276)
+2026-04-18T00:01:23.569+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T00:01:23.569+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T00:01:23.569+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-18T00:01:23.664+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:03:16.059+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:03:59.229+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Saving post: 'new lesson'
+2026-04-18T00:03:59.358+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Post saved with id: 9
+2026-04-18T00:03:59.387+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.b.Controller.AdminController         : New post created: 'new lesson'
+2026-04-18T00:04:19.458+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:04:24.602+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [d]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters], Field error in object 'post' on field 'title': rejected value [d]; codes [Size.post.title,Size.title,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.title,title]; arguments []; default message [title],100,3]; default message [Title must be between 3-100 characters]]
+2026-04-18T00:04:33.725+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.example.blogapp_1.Service.PostService  : Saving post: 'dn dndek ndkj'
+2026-04-18T00:04:33.725+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.example.blogapp_1.Service.PostService  : Post saved with id: 10
+2026-04-18T00:04:33.725+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.e.b.Controller.AdminController         : New post created: 'dn dndek ndkj'
+2026-04-18T00:04:33.746+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:04:42.513+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.e.b.Controller.AdminController         : Delete requested for post id: 9
+2026-04-18T00:04:42.515+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Deleting post with id: 9
+2026-04-18T00:04:43.809+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Post deleted successfully, id: 9
+2026-04-18T00:04:43.871+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:04:49.678+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.AdminController         : Delete requested for post id: 10
+2026-04-18T00:04:49.680+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Deleting post with id: 10
+2026-04-18T00:04:49.701+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Post deleted successfully, id: 10
+2026-04-18T00:04:49.726+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:08:14.594+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:08:17.128+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:08:47.686+03:00 ERROR 7280 --- [Blogapp_1] [http-nio-8080-exec-2] c.e.b.Controller.AdminController         : File upload failed
+
+java.io.IOException: java.io.FileNotFoundException: C:\Users\userrr\AppData\Local\Temp\tomcat.8080.17828722643614705815\work\Tomcat\localhost\ROOT\uploads\1776460127649_WhatsApp Görsel 2025-11-25 saat 23.21.00_3b9a62ae.jpg (Sistem belirtilen yolu bulamıyor)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:265) ~[spring-web-6.1.6.jar:6.1.6]
+	at com.example.blogapp_1.Controller.AdminController.create(AdminController.java:70) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.io.FileNotFoundException: C:\Users\userrr\AppData\Local\Temp\tomcat.8080.17828722643614705815\work\Tomcat\localhost\ROOT\uploads\1776460127649_WhatsApp Görsel 2025-11-25 saat 23.21.00_3b9a62ae.jpg (Sistem belirtilen yolu bulamıyor)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:404) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	... 50 common frames omitted
+
+2026-04-18T00:08:50.591+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Saving post: 'fvnvk knvlk'
+2026-04-18T00:08:50.596+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Post saved with id: 11
+2026-04-18T00:08:50.599+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.e.b.Controller.AdminController         : New post created: 'fvnvk knvlk'
+2026-04-18T00:08:50.611+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:08:54.708+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.example.blogapp_1.Service.PostService  : Fetching post with id: 11
+2026-04-18T00:09:00.405+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:09:12.908+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:11:30.415+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.e.b.Controller.AdminController         : Delete requested for post id: 11
+2026-04-18T00:11:30.426+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.example.blogapp_1.Service.PostService  : Deleting post with id: 11
+2026-04-18T00:11:30.443+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.example.blogapp_1.Service.PostService  : Post deleted successfully, id: 11
+2026-04-18T00:11:30.463+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:11:37.358+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:12:16.979+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:12:22.418+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:18:52.935+03:00  INFO 7280 --- [Blogapp_1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-18T00:18:53.027+03:00  INFO 7280 --- [Blogapp_1] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:18:53.087+03:00  INFO 7280 --- [Blogapp_1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-18T00:18:53.111+03:00  INFO 7280 --- [Blogapp_1] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-18T00:18:53.759+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 7280 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:18:53.759+03:00 DEBUG 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:18:53.759+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:18:54.463+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:18:54.506+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:18:54.991+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:18:54.995+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:18:54.997+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:18:55.043+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:18:55.045+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1278 ms
+2026-04-18T00:18:55.345+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-04-18T00:18:55.492+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@28e58b35
+2026-04-18T00:18:55.495+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-04-18T00:18:55.549+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:18:55.564+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:18:55.576+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:18:55.900+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:18:56.034+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:18:56.065+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:18:56.384+03:00  WARN 7280 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T00:18:56.407+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T00:18:56.757+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T00:18:56.780+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T00:18:56.790+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 3.184 seconds (process running for 1074.512)
+2026-04-18T00:18:56.802+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-18T00:24:05.761+03:00  INFO 7280 --- [Blogapp_1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-18T00:24:05.780+03:00  INFO 7280 --- [Blogapp_1] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:05.782+03:00  INFO 7280 --- [Blogapp_1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-04-18T00:24:05.793+03:00  INFO 7280 --- [Blogapp_1] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-04-18T00:24:06.066+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 7280 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:24:06.072+03:00 DEBUG 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:24:06.072+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:24:06.637+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:24:06.678+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:24:07.040+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:24:07.042+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:24:07.042+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:24:07.141+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:24:07.141+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2026-04-18T00:24:07.299+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-04-18T00:24:07.410+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@4bccfd75
+2026-04-18T00:24:07.417+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-04-18T00:24:07.458+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:24:07.467+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:24:07.473+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:24:07.683+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:24:07.750+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:07.772+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:24:08.024+03:00  WARN 7280 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T00:24:08.055+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T00:24:08.478+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T00:24:08.516+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T00:24:08.526+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 2.555 seconds (process running for 1386.247)
+2026-04-18T00:24:08.529+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-18T00:24:10.017+03:00  INFO 7280 --- [Blogapp_1] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
+2026-04-18T00:24:10.019+03:00  INFO 7280 --- [Blogapp_1] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:10.019+03:00  INFO 7280 --- [Blogapp_1] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-04-18T00:24:10.038+03:00  INFO 7280 --- [Blogapp_1] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-04-18T00:24:10.146+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 7280 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:24:10.146+03:00 DEBUG 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:24:10.146+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:24:10.374+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:24:10.389+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:24:10.510+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:24:10.512+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:24:10.512+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:24:10.541+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:24:10.541+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 391 ms
+2026-04-18T00:24:10.587+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-04-18T00:24:10.728+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@4f7b3b9b
+2026-04-18T00:24:10.728+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-04-18T00:24:10.751+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:24:10.754+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:24:10.760+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:24:10.862+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:24:10.918+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:10.918+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:24:10.918+03:00  WARN 7280 --- [Blogapp_1] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Resolution of declared constructors on bean Class [com.example.blogapp_1.Controller.AdminController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@24109fb2] failed
+2026-04-18T00:24:10.918+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:10.918+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-04-18T00:24:10.932+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2026-04-18T00:24:10.932+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-18T00:24:10.941+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-18T00:24:10.973+03:00 ERROR 7280 --- [Blogapp_1] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'adminController': Resolution of declared constructors on bean Class [com.example.blogapp_1.Controller.AdminController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@24109fb2] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:383) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.example.blogapp_1.BlogappApplication.main(BlogappApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+Caused by: java.lang.NoClassDefFoundError: com/example/blogapp_1/Service/PostService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3621) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2786) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:378) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 21 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.example.blogapp_1.Service.PostService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:578) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:557) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.2.5.jar:3.2.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:528) ~[na:na]
+	... 25 common frames omitted
+
+2026-04-18T00:24:15.569+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 7280 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:24:15.569+03:00 DEBUG 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:24:15.569+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:24:15.728+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:24:15.747+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:24:15.838+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:24:15.839+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:24:15.839+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:24:15.855+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:24:15.855+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 286 ms
+2026-04-18T00:24:15.877+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-04-18T00:24:15.942+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@16a7328b
+2026-04-18T00:24:15.942+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-04-18T00:24:15.957+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:24:15.959+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:24:15.959+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:24:16.046+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:24:16.122+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:24:16.131+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:24:16.234+03:00  WARN 7280 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T00:24:16.244+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T00:24:16.359+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T00:24:16.390+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T00:24:16.396+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 0.862 seconds (process running for 1394.116)
+2026-04-18T00:24:16.396+03:00  INFO 7280 --- [Blogapp_1] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-04-18T00:26:43.161+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T00:26:43.170+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T00:26:43.170+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-04-18T00:26:43.272+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-1] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [jbd bdj]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters]]
+2026-04-18T00:26:43.313+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-1] freemarker.beans                         : Detected multiple classes with the same name, "com.example.blogapp_1.model.Post". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2026-04-18T00:26:46.312+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [jbd bdj]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters]]
+2026-04-18T00:26:52.594+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [jbd bdj]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters]]
+2026-04-18T00:26:58.687+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [jbd bdj]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters]]
+2026-04-18T00:27:00.812+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.e.b.Controller.AdminController         : Validation failed on create: [Field error in object 'post' on field 'content': rejected value [jbd bdj]; codes [Size.post.content,Size.content,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post.content,content]; arguments []; default message [content],5000,10]; default message [Content must be between 10-5000 characters]]
+2026-04-18T00:27:02.512+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:27:04.822+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-2] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:27:13.382+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Saving post: 'djn cjnk'
+2026-04-18T00:27:13.406+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Post saved with id: 12
+2026-04-18T00:27:13.414+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.b.Controller.AdminController         : New post created: 'djn cjnk'
+2026-04-18T00:27:13.430+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:27:16.358+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.e.b.Controller.AdminController         : Opening edit form for post id: 12
+2026-04-18T00:27:16.358+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:27:21.974+03:00 ERROR 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.e.b.Controller.AdminController         : File upload failed
+
+java.io.IOException: java.io.FileNotFoundException: C:\Users\userrr\AppData\Local\Temp\tomcat.8080.14832897894488175548\work\Tomcat-1\localhost\ROOT\uploads\1776461241962_WhatsApp Görsel 2025-11-25 saat 23.26.58_81c8e981.jpg (Sistem belirtilen yolu bulamıyor)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:119) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:265) ~[spring-web-6.1.6.jar:6.1.6]
+	at com.example.blogapp_1.Controller.AdminController.update(AdminController.java:118) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.6.jar:6.1.6]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.20.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.6.jar:6.1.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.io.FileNotFoundException: C:\Users\userrr\AppData\Local\Temp\tomcat.8080.14832897894488175548\work\Tomcat-1\localhost\ROOT\uploads\1776461241962_WhatsApp Görsel 2025-11-25 saat 23.26.58_81c8e981.jpg (Sistem belirtilen yolu bulamıyor)
+	at java.base/java.io.FileOutputStream.open0(Native Method) ~[na:na]
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237) ~[na:na]
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185) ~[na:na]
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:404) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:117) ~[tomcat-embed-core-10.1.20.jar:10.1.20]
+	... 50 common frames omitted
+
+2026-04-18T00:27:21.992+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Updating post with id: 12
+2026-04-18T00:27:21.992+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:27:21.998+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Post updated: 'djn cjnk'
+2026-04-18T00:27:22.016+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.e.b.Controller.AdminController         : Post updated, id: 12
+2026-04-18T00:27:22.029+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:27:49.380+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.CommentController       : New comment on post id: 12 by 'nn aananna'
+2026-04-18T00:27:49.381+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:27:49.394+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.blogapp_1.Service.CommentService     : Saving comment by 'nn aananna'
+2026-04-18T00:27:49.406+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.blogapp_1.Service.CommentService     : Comment saved with id: 1
+2026-04-18T00:27:49.406+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.CommentController       : Comment saved, redirecting to post: 12
+2026-04-18T00:27:49.423+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:28:01.161+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-6] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:28:13.187+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.b.Controller.AdminController         : Opening edit form for post id: 12
+2026-04-18T00:28:13.187+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:28:15.587+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:28:17.210+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-2] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:28:33.440+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.b.Controller.CommentController       : New comment on post id: 12 by 'ali '
+2026-04-18T00:28:33.459+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:28:33.480+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.blogapp_1.Service.CommentService     : Saving comment by 'ali '
+2026-04-18T00:28:33.491+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.blogapp_1.Service.CommentService     : Comment saved with id: 2
+2026-04-18T00:28:33.514+03:00 DEBUG 7280 --- [Blogapp_1] [http-nio-8080-exec-5] c.e.b.Controller.CommentController       : Comment saved, redirecting to post: 12
+2026-04-18T00:28:33.544+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Fetching post with id: 12
+2026-04-18T00:28:48.744+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-7] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:28:52.721+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.e.b.Controller.AdminController         : Delete requested for post id: 12
+2026-04-18T00:28:52.723+03:00  WARN 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Deleting post with id: 12
+2026-04-18T00:28:52.763+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Post deleted successfully, id: 12
+2026-04-18T00:28:52.785+03:00  INFO 7280 --- [Blogapp_1] [http-nio-8080-exec-10] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:54:21.153+03:00  INFO 7280 --- [Blogapp_1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:54:21.156+03:00  INFO 7280 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-04-18T00:54:21.168+03:00  INFO 7280 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2026-04-18T00:57:00.885+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 16020 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T00:57:00.889+03:00 DEBUG 16020 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T00:57:00.890+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T00:57:01.029+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-18T00:57:01.030+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-18T00:57:01.982+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T00:57:02.057+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2026-04-18T00:57:02.729+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T00:57:02.745+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T00:57:02.745+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T00:57:02.808+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T00:57:02.818+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+2026-04-18T00:57:02.954+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18T00:57:03.298+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@30a98735
+2026-04-18T00:57:03.301+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18T00:57:03.426+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T00:57:03.523+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-18T00:57:03.570+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T00:57:03.916+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T00:57:05.223+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T00:57:05.381+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:57:05.401+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T00:57:05.904+03:00  WARN 16020 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T00:57:05.931+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T00:57:06.428+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T00:57:06.473+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T00:57:06.485+03:00  INFO 16020 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 6.284 seconds (process running for 8.597)
+2026-04-18T00:57:11.295+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T00:57:11.295+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T00:57:11.299+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-04-18T00:57:11.359+03:00 DEBUG 16020 --- [Blogapp_1] [http-nio-8080-exec-2] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T00:57:24.093+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Saving post: 'mm ddd d'
+2026-04-18T00:57:24.217+03:00 DEBUG 16020 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Post saved with id: 13
+2026-04-18T00:57:24.258+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-1] c.e.b.Controller.AdminController         : New post created: 'mm ddd d'
+2026-04-18T00:57:24.304+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-4] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T00:57:33.412+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-6] c.example.blogapp_1.Service.PostService  : Fetching post with id: 13
+2026-04-18T00:57:46.355+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.b.Controller.CommentController       : New comment on post id: 13 by 'ali '
+2026-04-18T00:57:46.355+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-8] c.example.blogapp_1.Service.PostService  : Fetching post with id: 13
+2026-04-18T00:57:46.367+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.blogapp_1.Service.CommentService     : Saving comment by 'ali '
+2026-04-18T00:57:46.368+03:00 DEBUG 16020 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.blogapp_1.Service.CommentService     : Comment saved with id: 3
+2026-04-18T00:57:46.375+03:00 DEBUG 16020 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.b.Controller.CommentController       : Comment saved, redirecting to post: 13
+2026-04-18T00:57:46.394+03:00  INFO 16020 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Fetching post with id: 13
+2026-04-18T00:59:05.912+03:00  INFO 16020 --- [Blogapp_1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T00:59:05.918+03:00  INFO 16020 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-18T00:59:05.930+03:00  INFO 16020 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-18T01:21:35.998+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 23 with PID 17220 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-04-18T01:21:36.000+03:00 DEBUG 17220 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-18T01:21:36.002+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-04-18T01:21:36.086+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-18T01:21:36.086+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-18T01:21:37.179+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-18T01:21:37.267+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
+2026-04-18T01:21:38.020+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-18T01:21:38.034+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-18T01:21:38.034+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-18T01:21:38.099+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-18T01:21:38.099+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2013 ms
+2026-04-18T01:21:38.254+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-18T01:21:38.499+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@177f781e
+2026-04-18T01:21:38.501+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-18T01:21:38.639+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-18T01:21:38.732+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-18T01:21:38.775+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-18T01:21:39.175+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-18T01:21:40.412+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-18T01:21:40.518+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T01:21:40.530+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-04-18T01:21:41.105+03:00  WARN 17220 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-18T01:21:41.140+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-04-18T01:21:41.665+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-18T01:21:41.707+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-04-18T01:21:41.718+03:00  INFO 17220 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 6.355 seconds (process running for 7.289)
+2026-04-18T01:22:00.469+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18T01:22:00.471+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-18T01:22:00.472+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-18T01:22:00.547+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:22:06.030+03:00  WARN 17220 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.AdminController         : Delete requested for post id: 13
+2026-04-18T01:22:06.030+03:00  WARN 17220 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Deleting post with id: 13
+2026-04-18T01:22:06.831+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-3] c.example.blogapp_1.Service.PostService  : Post deleted successfully, id: 13
+2026-04-18T01:22:06.936+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-2] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:23:01.284+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:23:12.866+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:23:20.983+03:00 DEBUG 17220 --- [Blogapp_1] [http-nio-8080-exec-7] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T01:23:25.459+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-9] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:28:41.849+03:00 DEBUG 17220 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.Controller.AdminController         : Opening create post form
+2026-04-18T01:28:59.405+03:00  INFO 17220 --- [Blogapp_1] [http-nio-8080-exec-5] c.example.blogapp_1.Service.PostService  : Fetching all posts
+2026-04-18T01:39:15.050+03:00  INFO 17220 --- [Blogapp_1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-18T01:39:15.050+03:00  INFO 17220 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-18T01:39:15.075+03:00  INFO 17220 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
