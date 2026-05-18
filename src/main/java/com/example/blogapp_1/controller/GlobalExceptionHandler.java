@@ -1,4 +1,4 @@
-package com.example.blogapp_1.Controller;
+package com.example.blogapp_1.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;

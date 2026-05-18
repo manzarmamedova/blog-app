@@ -1,7 +1,7 @@
-package com.example.blogapp_1.Controller;
+package com.example.blogapp_1.controller;
 
-import com.example.blogapp_1.Service.CommentService;
-import com.example.blogapp_1.Service.PostService;
+import com.example.blogapp_1.service.CommentService;
+import com.example.blogapp_1.service.PostService;
 import com.example.blogapp_1.model.Comment;
 import com.example.blogapp_1.model.Post;
 import org.slf4j.Logger;

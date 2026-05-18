@@ -1,6 +1,6 @@
-package com.example.blogapp_1.Controller;
+package com.example.blogapp_1.controller;
 
-import com.example.blogapp_1.Service.CommentService;
+import com.example.blogapp_1.service.CommentService;
 import com.example.blogapp_1.dto.CommentDTO;
 import com.example.blogapp_1.model.Comment;
 import org.slf4j.Logger;

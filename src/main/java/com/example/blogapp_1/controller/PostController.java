@@ -1,7 +1,6 @@
-package com.example.blogapp_1.Controller;
+package com.example.blogapp_1.controller;
 
-import com.example.blogapp_1.model.Post;
-import com.example.blogapp_1.Service.PostService;
+import com.example.blogapp_1.service.PostService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
