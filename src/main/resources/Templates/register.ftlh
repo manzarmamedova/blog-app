@@ -2,28 +2,39 @@
 <html>
 <head>
     <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
 
-<h2>Register</h2>
+<body class="auth-page">
 
-<form action="/register" method="post">
+<div class="auth-center">
 
-    <label>Username:</label>
-    <input type="text" name="username" required>
+    <div class="auth-card">
 
-    <br>
+        <h1 class="auth-title">Create account</h1>
+        <p class="auth-sub">Join the platform</p>
 
-    <label>Password:</label>
-    <input type="password" name="password" required>
+        <#if error??>
+            <div class="auth-error">${error}</div>
+        </#if>
 
-    <br><br>
+        <form method="post" action="/register" class="auth-form">
 
-    <button type="submit">Register</button>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
 
-</form>
+            <button type="submit">Register</button>
 
-<a href="/login">Login</a>
+        </form>
+
+        <div class="auth-footer">
+            Already have account?
+            <a href="/login">Login</a>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
