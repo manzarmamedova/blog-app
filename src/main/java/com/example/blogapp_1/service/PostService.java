@@ -67,4 +67,6 @@ public class PostService {
         logger.info("Searching posts with keyword: '{}'", keyword);
         return postRepository.findByTitleContainingIgnoreCase(keyword);
     }
+
+
 }
