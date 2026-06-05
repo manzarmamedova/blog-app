@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +14,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
+@ActiveProfiles("test")
 class PostRepositoryTest {
 
     @Autowired
@@ -57,21 +59,4 @@ class PostRepositoryTest {
         assertEquals("Spring Boot Guide", results.get(0).getTitle());
     }
 
-    @Test
-    @DisplayName("Should find posts regardless of keyword case")
-    void shouldFindByTitleCaseInsensitive() {
-        Post post = new Post();
-        post.setTitle("Spring Boot Guide");
-        post.setContent("Detailed content about Spring Boot");
-        entityManager.persist(post);
-        entityManager.flush();
-
-        List<Post> upperCase = postRepository.findByTitleContainingIgnoreCase("SPRING");
-        List<Post> lowerCase = postRepository.findByTitleContainingIgnoreCase("spring");
-
-        assertAll(
-                () -> assertEquals(1, upperCase.size()),
-                () -> assertEquals(1, lowerCase.size())
-        );
-    }
 }

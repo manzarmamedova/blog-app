@@ -4,12 +4,12 @@
 
     <section class="hero">
         <div class="hero-inner">
-            <div class="hero-badge">Developer Blog</div>
-            <h1 class="hero-title">Thoughts, Ideas &amp; Tutorials</h1>
-            <p class="hero-sub">Articles about Java, Spring Boot, and modern web development.</p>
+            <div class="hero-badge">${springMacroRequestContext.getMessage("home.hero.badge")}</div>
+            <h1 class="hero-title">${springMacroRequestContext.getMessage("home.hero.title")}</h1>
+            <p class="hero-sub">${springMacroRequestContext.getMessage("home.hero.sub")}</p>
             <div class="hero-actions">
-                <a href="/admin/create" class="btn-primary">Write a Post</a>
-                <a href="#posts" class="btn-ghost">Browse Posts</a>
+                <a href="/admin/create" class="btn-primary">${springMacroRequestContext.getMessage("home.hero.write")}</a>
+                <a href="#posts" class="btn-ghost">${springMacroRequestContext.getMessage("home.hero.browse")}</a>
             </div>
         </div>
     </section>
@@ -23,8 +23,8 @@
     <div class="main-layout" id="posts">
         <main class="post-section">
             <div class="section-header">
-                <h2 class="section-title">All Posts</h2>
-                <span class="post-count">${(posts![])?size} articles</span>
+                <h2 class="section-title">${springMacroRequestContext.getMessage("home.posts.title")}</h2>
+                <span class="post-count">${(posts![])?size} ${springMacroRequestContext.getMessage("common.article")}</span>
             </div>
 
             <#if (posts![])?has_content>
@@ -33,14 +33,16 @@
                         <article class="post-card">
                             <div class="post-card-inner">
                                 <div class="post-card-meta">
-                                    <span class="post-category">Article</span>
+                                    <span class="post-category">${springMacroRequestContext.getMessage("common.article")}</span>
                                     <span class="post-date">${post.formattedDate}</span>
                                 </div>
                                 <h3 class="post-card-title">
                                     <a href="/post/${post.id}">${post.title}</a>
                                 </h3>
                                 <p class="post-card-excerpt">
-                                    <#if (post.content?length > 160)>
+
+                                    <#if ((post.content!"")?length > 160)>
+
                                         ${post.content?substring(0, 160)}...
                                     <#else>
                                         ${post.content}
@@ -50,17 +52,17 @@
                                     <div class="post-author">
                                         <div class="author-avatar">A</div>
                                         <div>
-                                            <div class="author-name">Admin</div>
-                                            <div class="author-meta">${post.comments?size} comments</div>
+                                            <div class="author-name">${springMacroRequestContext.getMessage("common.author")}</div>
+                                            <div class="author-meta">${post.comments?size} ${springMacroRequestContext.getMessage("home.sidebar.comments")}</div>
                                         </div>
                                     </div>
                                     <div class="post-card-actions">
-                                        <a href="/post/${post.id}" class="btn-read">Read →</a>
+                                        <a href="/post/${post.id}" class="btn-read">${springMacroRequestContext.getMessage("home.posts.readMore")} →</a>
                                         <a href="/admin/edit/${post.id}" class="btn-icon" title="Edit">✏</a>
                                         <form action="/admin/delete/${post.id}" method="post" style="display:inline">
                                             <button type="submit"
                                                     class="btn-icon danger"
-                                                    onclick="return confirm('Delete this post?')"
+                                                    onclick="return confirm('${springMacroRequestContext.getMessage("home.confirm.delete")}')"
                                                     title="Delete">✕</button>
                                         </form>
                                     </div>
@@ -72,20 +74,20 @@
             <#else>
                 <div class="empty-state">
                     <div class="empty-icon">✍</div>
-                    <h3>No posts yet</h3>
-                    <p>Be the first to share your thoughts.</p>
-                    <a href="/admin/create" class="btn-primary">Write First Post</a>
+                    <h3>${springMacroRequestContext.getMessage("home.posts.noPost")}</h3>
+                    <p>${springMacroRequestContext.getMessage("home.posts.noPost.sub")}</p>
+                    <a href="/admin/create" class="btn-primary">${springMacroRequestContext.getMessage("home.posts.writeFirst")}</a>
                 </div>
             </#if>
         </main>
 
         <aside class="sidebar">
             <div class="sidebar-card stats-card">
-                <h4 class="sidebar-title">Stats</h4>
+                <h4 class="sidebar-title">${springMacroRequestContext.getMessage("home.sidebar.stats")}</h4>
                 <div class="stats-row">
                     <div class="stat-item">
                         <div class="stat-number">${(posts![])?size}</div>
-                        <div class="stat-label">Posts</div>
+                        <div class="stat-label">${springMacroRequestContext.getMessage("home.sidebar.posts")}</div>
                     </div>
                     <div class="stat-divider"></div>
                     <div class="stat-item">
@@ -96,13 +98,13 @@
                             </#list>
                             ${totalComments}
                         </div>
-                        <div class="stat-label">Comments</div>
+                        <div class="stat-label">${springMacroRequestContext.getMessage("home.sidebar.comments")}</div>
                     </div>
                 </div>
             </div>
 
             <div class="sidebar-card">
-                <h4 class="sidebar-title">Recent Posts</h4>
+                <h4 class="sidebar-title">${springMacroRequestContext.getMessage("home.sidebar.recentPosts")}</h4>
                 <#if (posts![])?has_content>
                     <ul class="recent-list">
                         <#list (posts![])?reverse as post>
@@ -115,19 +117,19 @@
                         </#list>
                     </ul>
                 <#else>
-                    <p class="sidebar-empty">No posts yet.</p>
+                    <p class="sidebar-empty">${springMacroRequestContext.getMessage("home.posts.noPost")}.</p>
                 </#if>
             </div>
 
             <div class="sidebar-card about-card">
-                <h4 class="sidebar-title">About</h4>
+                <h4 class="sidebar-title">${springMacroRequestContext.getMessage("home.sidebar.about")}</h4>
                 <div class="about-avatar">A</div>
-                <p class="about-text">A developer blog sharing knowledge about Java, Spring Boot, and web development.</p>
-                <a href="/about" class="btn-outline full-width">Learn More</a>
+                <p class="about-text">${springMacroRequestContext.getMessage("home.sidebar.aboutText")}</p>
+                <a href="/about" class="btn-outline full-width">${springMacroRequestContext.getMessage("home.sidebar.learnMore")}</a>
             </div>
 
             <div class="sidebar-card">
-                <a href="/admin/create" class="btn-primary full-width">+ Write New Post</a>
+                <a href="/admin/create" class="btn-primary full-width">${springMacroRequestContext.getMessage("home.sidebar.writeNew")}</a>
             </div>
         </aside>
     </div>

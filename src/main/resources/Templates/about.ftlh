@@ -5,53 +5,53 @@
     <div class="about-page">
         <div class="about-hero">
             <div class="about-avatar-large">A</div>
-            <h1>About DevBlog</h1>
-            <p>A blog dedicated to software development, Java, and Spring Boot.</p>
+            <h1>${springMacroRequestContext.getMessage("about.title")}</h1>
+            <p>${springMacroRequestContext.getMessage("about.sub")}</p>
         </div>
 
         <div class="about-grid">
             <div class="about-section-card">
-                <h2>What is DevBlog?</h2>
-                <p>DevBlog is a personal blog built with Spring Boot and FreeMarker. It covers topics ranging from core Java concepts to advanced Spring Boot features, database management, and RESTful API design.</p>
-                <p>Every article is written with the goal of making complex topics simple and accessible for developers at all levels.</p>
+                <h2>${springMacroRequestContext.getMessage("about.what.title")}</h2>
+                <p>${springMacroRequestContext.getMessage("about.what.text1")}</p>
+                <p>${springMacroRequestContext.getMessage("about.what.text2")}</p>
             </div>
 
             <div class="about-section-card">
-                <h2>Tech Stack</h2>
+                <h2>${springMacroRequestContext.getMessage("about.tech.title")}</h2>
                 <div class="tech-list">
                     <div class="tech-item">
                         <div class="tech-icon java">J</div>
                         <div>
                             <div class="tech-name">Java 21</div>
-                            <div class="tech-desc">Primary language</div>
+                            <div class="tech-desc">${springMacroRequestContext.getMessage("about.tech.java.desc")}</div>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon spring">S</div>
                         <div>
                             <div class="tech-name">Spring Boot</div>
-                            <div class="tech-desc">Web framework</div>
+                            <div class="tech-desc">${springMacroRequestContext.getMessage("about.tech.spring.desc")}</div>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon db">P</div>
                         <div>
                             <div class="tech-name">PostgreSQL</div>
-                            <div class="tech-desc">Database</div>
+                            <div class="tech-desc">${springMacroRequestContext.getMessage("about.tech.db.desc")}</div>
                         </div>
                     </div>
                     <div class="tech-item">
                         <div class="tech-icon fm">F</div>
                         <div>
                             <div class="tech-name">FreeMarker</div>
-                            <div class="tech-desc">Template engine</div>
+                            <div class="tech-desc">${springMacroRequestContext.getMessage("about.tech.fm.desc")}</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="about-section-card">
-                <h2>Topics Covered</h2>
+                <h2>${springMacroRequestContext.getMessage("about.topics.title")}</h2>
                 <div class="topics-grid">
                     <span class="topic-tag">Spring Boot</span>
                     <span class="topic-tag">Java</span>
@@ -65,8 +65,8 @@
             </div>
 
             <div class="about-section-card">
-                <h2>REST API</h2>
-                <p>This blog also exposes a REST API for programmatic access to posts and comments.</p>
+                <h2>${springMacroRequestContext.getMessage("about.api.title")}</h2>
+                <p>${springMacroRequestContext.getMessage("about.api.sub")}</p>
                 <div class="api-list">
                     <div class="api-item"><span class="method get">GET</span> /api/posts</div>
                     <div class="api-item"><span class="method get">GET</span> /api/posts/{id}</div>

@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
@@ -26,10 +27,18 @@ class PostControllerTest {
     private PostService postService;
 
     @Test
+    @WithMockUser
     @DisplayName("GET / — home page should return with post list")
     void shouldReturnHomePage() throws Exception {
-        Post p1 = new Post(); p1.setId(1L); p1.setTitle("Post 1");
-        Post p2 = new Post(); p2.setId(2L); p2.setTitle("Post 2");
+        Post p1 = new Post();
+        p1.setId(1L);
+        p1.setTitle("Post 1");
+        p1.setContent("This is the content for post 1."); // <-- ADDED CONTENT
+
+        Post p2 = new Post();
+        p2.setId(2L);
+        p2.setTitle("Post 2");
+        p2.setContent("This is the content for post 2."); // <-- ADDED CONTENT
 
         when(postService.getAll()).thenReturn(List.of(p1, p2));
 
@@ -43,6 +52,7 @@ class PostControllerTest {
     }
 
     @Test
+    @WithMockUser
     @DisplayName("GET /post/{id} — post detail page should be returned")
     void shouldReturnPostDetailPage() throws Exception {
         Post post = new Post();
@@ -61,6 +71,7 @@ class PostControllerTest {
     }
 
     @Test
+    @WithMockUser
     @DisplayName("GET /about — about page should be returned")
     void shouldReturnAboutPage() throws Exception {
         mockMvc.perform(get("/about"))
