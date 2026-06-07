@@ -3,16 +3,22 @@ spring:
     name: Blogapp_1
   profiles:
     active: dev
+    messages:
+      basename: messages
+      encoding: UTF-8
 
 app:
   upload-dir: uploads
   name: BlogApp
 
+
 ---
+
 spring:
   config:
     activate:
       on-profile: dev
+
 
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
