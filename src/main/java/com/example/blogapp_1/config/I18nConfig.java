@@ -5,22 +5,25 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+
 
 import java.util.Locale;
 
 @Configuration
 public class I18nConfig implements WebMvcConfigurer {
 
-    // Stores the selected language in the user's session
+
+
+
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver resolver = new SessionLocaleResolver();
-        resolver.setDefaultLocale(Locale.ENGLISH); // default: English
+        resolver.setDefaultLocale(new Locale("tr"));
         return resolver;
     }
-
     // Listens for ?lang=tr / ?lang=ka / ?lang=en in the URL
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {

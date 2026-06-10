@@ -3,7 +3,7 @@ spring:
     name: Blogapp_1
   profiles:
     active: dev
-    messages:
+  messages:
       basename: messages
       encoding: UTF-8
 
@@ -39,6 +39,15 @@ spring:
     template-loader-path: classpath:/templates/
     suffix: .ftlh
     cache: false
+
+management:
+   endpoints:
+     web:
+       exposure:
+          include: health,info,metrics
+   endpoint:
+        health:
+          show-details: always
 
 logging:
   level:

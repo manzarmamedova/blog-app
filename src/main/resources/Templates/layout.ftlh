@@ -16,10 +16,16 @@
                 DevBlog
             </a>
             <nav class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
+                <a href="/">${springMacroRequestContext.getMessage("nav.home")}</a>
+                <a href="/about">${springMacroRequestContext.getMessage("nav.about")}</a>
                 <a href="/admin/create" class="nav-btn">+ New Post</a>
             </nav>
+
+            <div class="lang-switcher">
+                <a href="?lang=en">EN</a>
+                <a href="?lang=tr">TR</a>
+                <a href="?lang=ka">KA</a>
+            </div>
         </div>
     </header>
 
