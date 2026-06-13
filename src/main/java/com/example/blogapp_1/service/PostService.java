@@ -6,6 +6,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Caching;
 
 import java.util.List;
 
@@ -20,11 +23,12 @@ public class PostService {
         this.postRepository = postRepository;
     }
 
+    @Cacheable(value = "posts")
     public List<Post> getAll() {
         logger.info("Fetching all posts");
         return postRepository.findAll();
     }
-
+    @Cacheable(value = "post", key = "#id")
     public Post getById(Long id) {
         logger.info("Fetching post with id: {}", id);
         return postRepository.findById(id)
@@ -33,6 +37,10 @@ public class PostService {
                     return new RuntimeException("Post not found: " + id);
                 });
     }
+    @Caching(evict = {
+            @CacheEvict(value = "posts", allEntries = true),
+            @CacheEvict(value = "post", key = "#result.id")
+    })
 
     @Transactional
     public Post save(Post post) {
@@ -41,6 +49,11 @@ public class PostService {
         logger.debug("Post saved with id: {}", saved.getId());
         return saved;
     }
+
+    @Caching(evict = {
+            @CacheEvict(value = "posts", allEntries = true),
+            @CacheEvict(value = "post", key = "#id")
+    })
 
     @Transactional
     public Post update(Long id, Post updatedPost) {
@@ -51,6 +64,11 @@ public class PostService {
         logger.debug("Post updated: '{}'", post.getTitle());
         return postRepository.save(post);
     }
+
+    @Caching(evict = {
+            @CacheEvict(value = "posts", allEntries = true),
+            @CacheEvict(value = "post", key = "#id")
+    })
 
     @Transactional
     public void delete(Long id) {

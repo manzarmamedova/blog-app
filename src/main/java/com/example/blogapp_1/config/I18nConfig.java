@@ -21,7 +21,7 @@ public class I18nConfig implements WebMvcConfigurer {
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver resolver = new SessionLocaleResolver();
-        resolver.setDefaultLocale(new Locale("tr"));
+        resolver.setDefaultLocale(new Locale("en"));
         return resolver;
     }
     // Listens for ?lang=tr / ?lang=ka / ?lang=en in the URL
