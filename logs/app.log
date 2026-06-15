@@ -681,3 +681,53 @@ Unconditional classes:
 2026-06-14T02:37:10.466+03:00  INFO 17928 --- [Blogapp_1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-06-14T02:37:10.466+03:00  INFO 17928 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-06-14T02:37:10.485+03:00  INFO 17928 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-14T02:46:28.067+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Starting BlogappApplication using Java 21.0.11 with PID 9032 (C:\Users\userrr\Desktop\blogapp_1\target\classes started by userrr in C:\Users\userrr\Desktop\blogapp_1)
+2026-06-14T02:46:28.069+03:00 DEBUG 9032 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-06-14T02:46:28.071+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : The following 1 profile is active: "dev"
+2026-06-14T02:46:28.147+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-14T02:46:28.147+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-14T02:46:29.941+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-14T02:46:30.042+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2026-06-14T02:46:31.623+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-14T02:46:31.648+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-14T02:46:31.648+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-06-14T02:46:31.738+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-14T02:46:31.739+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3591 ms
+2026-06-14T02:46:33.042+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-14T02:46:33.752+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b334743
+2026-06-14T02:46:33.757+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-14T02:46:34.173+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-14T02:46:35.570+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-06-14T02:46:35.871+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-14T02:46:36.677+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-14T02:46:40.084+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-14T02:46:40.313+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T02:46:40.389+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] c.e.blogapp_1.config.LoggingConfig       : Application started successfully
+2026-06-14T02:46:41.447+03:00  WARN 9032 --- [Blogapp_1] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-14T02:46:41.733+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-06-14T02:46:42.477+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-06-14T02:46:42.627+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@71522bc1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59001af2, org.springframework.security.web.context.SecurityContextHolderFilter@d72d574, org.springframework.security.web.header.HeaderWriterFilter@59c0221a, org.springframework.web.filter.CorsFilter@15dd2006, org.springframework.security.web.authentication.logout.LogoutFilter@5887d56f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19d91d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b2133ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b5483e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44e92660, org.springframework.security.web.access.ExceptionTranslationFilter@48dc743, org.springframework.security.web.access.intercept.AuthorizationFilter@439a1fd5]
+2026-06-14T02:46:43.707+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-06-14T02:46:43.819+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-06-14T02:46:43.839+03:00  INFO 9032 --- [Blogapp_1] [restartedMain] c.example.blogapp_1.BlogappApplication   : Started BlogappApplication in 16.551 seconds (process running for 18.011)
+2026-06-14T02:46:44.248+03:00  INFO 9032 --- [Blogapp_1] [RMI TCP Connection(1)-172.20.10.6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-14T02:46:44.248+03:00  INFO 9032 --- [Blogapp_1] [RMI TCP Connection(1)-172.20.10.6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-14T02:46:44.251+03:00  INFO 9032 --- [Blogapp_1] [RMI TCP Connection(1)-172.20.10.6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-06-14T02:46:44.797+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:46:49.525+03:00  INFO 9032 --- [Blogapp_1] [http-nio-8080-exec-1] c.example.blogapp_1.service.PostService  : Fetching all posts
+2026-06-14T02:47:43.858+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:48:22.146+03:00  WARN 9032 --- [Blogapp_1] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-06-14T02:48:43.854+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:49:43.847+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:50:01.388+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-8] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:06.556+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-10] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:10.754+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-3] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:12.477+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-2] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:23.673+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-2] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:26.648+03:00 DEBUG 9032 --- [Blogapp_1] [http-nio-8080-exec-6] c.e.b.controller.AdminController         : Opening create post form
+2026-06-14T02:50:43.849+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:51:43.869+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:52:43.850+03:00  INFO 9032 --- [Blogapp_1] [scheduling-1] c.e.blogapp_1.service.ScheduledTasks     : [Scheduled Task] Total posts in database: 0
+2026-06-14T02:52:49.167+03:00  INFO 9032 --- [Blogapp_1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-14T02:52:49.175+03:00  INFO 9032 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-14T02:52:49.202+03:00  INFO 9032 --- [Blogapp_1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
