@@ -1412,3 +1412,158 @@ body {
     margin-bottom: 12px;
     text-align: center;
 }
+/* ═══════════════ MOBILE RESPONSIVE ═══════════════ */
+
+@media (max-width: 900px) {
+    .main-layout,
+    .post-layout,
+    .create-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .sidebar,
+    .post-sidebar,
+    .create-tips {
+        position: static;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-left {
+        display: none;
+    }
+
+    .auth-right {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-inner {
+        padding: 0 16px;
+    }
+
+    .brand {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 48px 16px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-sub {
+        font-size: 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .main-layout,
+    .post-layout,
+    .create-layout,
+    .about-page,
+    .create-page {
+        padding: 28px 16px;
+    }
+
+    .post-card-inner {
+        padding: 20px 18px;
+    }
+
+    .post-card-title {
+        font-size: 17px;
+    }
+
+    .post-card-footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .post-hero {
+        padding: 36px 16px;
+    }
+
+    .post-hero-title {
+        font-size: 26px;
+    }
+
+    .post-hero-meta {
+        flex-wrap: wrap;
+    }
+
+    .post-hero-actions {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .post-article {
+        padding: 24px 20px;
+    }
+
+    .comments-section {
+        padding: 0 16px 48px;
+    }
+
+    .comment-form-wrapper {
+        padding: 22px;
+    }
+
+    .create-form-card {
+        padding: 22px;
+    }
+
+    .stats-row {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-inner {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 14px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-title {
+        font-size: 24px;
+    }
+
+    .post-hero-title {
+        font-size: 22px;
+    }
+
+    .comment-card {
+        flex-direction: column;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
