@@ -26,8 +26,8 @@ public class AdminController {
 
     private final PostService postService;
 
-    // TR: upload klasörü config'ten alınıyor
-    // KA: ატვირთვის ფოლდერი კონფიგურაციიდან მოდის
+
+
     @Value("${app.upload-dir}")
     private String uploadDir;
 
@@ -49,16 +49,16 @@ public class AdminController {
                          Model model,
                          RedirectAttributes redirectAttributes) {
 
-        // TR: validation hataları UI'ya gönderiliyor
-        // KA: ვალიდაციის შეცდომები იგზავნება UI-ზე
+
+
         if (result.hasErrors()) {
             logger.warn("Validation failed on create: {}", result.getAllErrors());
             model.addAttribute("errors", result.getAllErrors());
             return "create-post";
         }
 
-        // TR: dosya yükleme işlemi
-        // KA: ფაილის ატვირთვის პროცესი
+
+
         if (!file.isEmpty()) {
             try {
                 String fileName = System.currentTimeMillis() + "_" + file.getOriginalFilename();
@@ -111,8 +111,8 @@ public class AdminController {
             return "create-post";
         }
 
-        // TR: update sırasında da file upload destekleniyor
-        // KA: განახლებისასაც მუშაობს ფაილის ატვირთვა
+
+
         if (!file.isEmpty()) {
             try {
                 String fileName = System.currentTimeMillis() + "_" + file.getOriginalFilename();

@@ -17,7 +17,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // TR: Başlık boş olamaz ve uzunluk kontrolü
+
     // KA: სათაური ცარიელი არ უნდა იყოს და უნდა ჰქონდეს სიგრძის შეზღუდვა
     @NotBlank(message = "Title cannot be empty")
     @Size(min = 3, max = 100, message = "Title must be between 3-100 characters")
